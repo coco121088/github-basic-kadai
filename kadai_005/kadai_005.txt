@@ -1,0 +1,52 @@
+PC_User@DESKTOP-UA72ACR MINGW64 ~
+$ mkdir git_challenge
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~
+$ cd git_challenge
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/PC_User/git_challenge/.git/
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ touch hello_world.txt
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ echo hello,world! > hello_world.txt
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ git commit -m hello,world
+[main (root-commit) efd7eb6] hello,world
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ echo こんにちは、世界! >> hello_world.txt
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ git commit -m こんにちは、世界！
+[main cc745cb] こんにちは、世界！
+ 1 file changed, 1 insertion(+)
+
+PC_User@DESKTOP-UA72ACR MINGW64 ~/git_challenge (main)
+$ git log
+commit cc745cb06dccfc141c45420f3aeb29867110b028 (HEAD -> main)
+Author: kokona yano <coco1210@ymail.ne.jp>
+Date:   Wed Dec 31 01:43:48 2025 +0900
+
+    こんにちは、世界！
+
+commit efd7eb634eb7aa76f20b466e86048872c5a1d392
+Author: kokona yano <coco1210@ymail.ne.jp>
+Date:   Wed Dec 31 01:40:46 2025 +0900
+
+    hello,world
+
+
